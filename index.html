@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <title>WEATHER APP</title>
+</head>
+<body>
+    <div class="mdiv">
+        <div class="weather_app">
+            <h2 class="name" align="center" style="color:#f51d11;">WEATHER FORECAST</h2>
+            <div class="ip">
+                <input type="text" id="userText" placeholder="Enter a city name">
+                <button onclick="getweatherData()"><img src="search.gif" height="40px" style="border-radius: 10px;"></button>
+            </div>
+            <div class="info" align="center">
+                <img src="sunny.png" class="weather-img">
+                <h1 id="temp">0°C</h1>
+                <h2 id="city">City Name</h2>
+            </div>
+            <div class="info1">
+                <div class="humidity1">
+                    <img src="humidity.png" class="humi">
+                    <h3>HUMIDITY</h3>
+                    <h4 id="humi-info">0%</h4>
+                </div>
+                <div class="wind">
+                    <img src="wind.png" class="humi">
+                    <h3>WIND</h3>
+                    <h4 id="wind-info">0km/h</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="WeatherScript.js"></script>
+</body>
+</html>

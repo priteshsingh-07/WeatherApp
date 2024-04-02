@@ -1,0 +1,149 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.mdiv{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.weather_app{
+    height: 600px;
+    width: 450px;
+    background-image: linear-gradient(to right,#cbecf7,#669fb3);
+    box-shadow: 0px 0px 10px skyblue;
+    border-radius: 50px;
+    padding: 30px;
+}
+.ip{
+    height: 40px;
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px;
+    position: relative;
+}
+.ip input{
+    border: none;
+    outline: none;
+    flex: 1;
+    height: 40px;
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 20px;
+}
+.ip button{
+    height: 40px;
+    width: 50px;
+    border: none;
+    outline: none;
+    position: absolute;
+    right: 0px;
+    border-radius: 20px;
+    background-color: white;
+    cursor: pointer;
+}
+.weather-img{
+    height: 200px;
+    margin-top: 20px;
+    border-radius: 30%;
+}
+#temp{
+    margin-top: 10px;
+    font-size: 30px;
+    font-family: arial black;
+}
+#city{
+    font-size: 28px;
+    font-family: arial orange;
+    color: red;
+}
+.humi{
+    height: 60px;
+}
+.info1{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wind,.humidity1{
+    margin: 10px 60px 0px;
+}
+.name {
+	-webkit-animation: focus-in-contract-bck 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: focus-in-contract-bck 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@-webkit-keyframes focus-in-contract-bck {
+    0% {
+      letter-spacing: 1em;
+      -webkit-transform: translateZ(300px);
+              transform: translateZ(300px);
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateZ(12px);
+              transform: translateZ(12px);
+      -webkit-filter: blur(0);
+              filter: blur(0);
+      opacity: 1;
+    }
+  }
+  @keyframes focus-in-contract-bck {
+    0% {
+      letter-spacing: 1em;
+      -webkit-transform: translateZ(300px);
+              transform: translateZ(300px);
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateZ(12px);
+              transform: translateZ(12px);
+      -webkit-filter: blur(0);
+              filter: blur(0);
+      opacity: 1;
+    }
+  }
+  .humi {
+	-webkit-animation: rotate-in-center 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: rotate-in-center 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+ @-webkit-keyframes rotate-in-center {
+    0% {
+      -webkit-transform: rotate(-360deg);
+              transform: rotate(-360deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+      opacity: 1;
+    }
+  }
+  @keyframes rotate-in-center {
+    0% {
+      -webkit-transform: rotate(-360deg);
+              transform: rotate(-360deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+      opacity: 1;
+    }
+  }
+  
+  
